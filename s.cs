@@ -6,7 +6,7 @@ public class Program
 	{
 		int students = 18;
 		int groupSize = 5;
-		while (students % groupSize != 0) {
+		while (students % groupSize != 0 && groupSize > 2) {
 			Console.WriteLine("Unsuccessful, group size = " + groupSize);
 			groupSize--;
 		}
