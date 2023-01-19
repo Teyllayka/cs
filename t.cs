@@ -6,7 +6,11 @@ public class Program
 	{
 		int numberOne = 12932;
 		int numberTwo = -2828472;
+
+		double first = Math.Sqrt(numberOne);
+		double second = Math.Sqrt(numberTwo);
 		
-		Console.WriteLine(Math.Sqrt(numberOne) > Math.Sqrt(numberTwo) ? numberTwo : numberOne);
+		Console.WriteLine(Double.IsNaN(first) ?  Double.IsNaN(second) ? "None" : numberTwo : Double.IsNaN(second) ? numberOne : Math.Min(numberOne, numberTwo)  );
+		
 	}
 }
