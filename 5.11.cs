@@ -1,6 +1,6 @@
 using System;
 
-
+using System.Text.RegularExpressions;
 class Program
 {
     public static void Main(string[] args)
@@ -27,6 +27,11 @@ class Program
             }
         }
       Console.WriteLine(sum);
+
+
+      string text1 = Console.ReadLine();
+      string result = Regex.Replace(text1, @"[^\w\s]", "");
+      Console.WriteLine(text1.Length - result.Length);
 
     }
 }
