@@ -25,8 +25,8 @@ class Program
         Vehicle bike = new Vehicle(type: "bike", numTires: 2, year: 2017, runs: true);
 
         Console.WriteLine($"{car.Type}");
-        Console.WriteLine($"{car.Runs}");
-        Console.WriteLine($"{car.NumTires}");
+        Console.WriteLine($"{oldcar.Runs}");
+        Console.WriteLine($"{bike.NumTires}");
       
 
     }
